@@ -8,4 +8,6 @@ const env = {
     }
 }
 
+console.log("ENV JS",process.env.NEXT_PUBLIC_APPWRITE_HOST_URL)
+
 export default env
