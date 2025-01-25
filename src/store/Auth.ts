@@ -5,14 +5,14 @@ import { persist } from "zustand/middleware";
 import { AppwriteException, ID, Models } from "appwrite";
 import { account } from "@/models/client/config";
 
-export interface UserPref {
+export interface UserPrefs {
   reputation: number;  // User preferences such as reputation
 }
 
 interface IAuthStore {
   session: Models.Session | null;
   jwt: string | null;
-  user: Models.User<UserPref> | null;  // Correctly using a single user
+  user: Models.User<UserPrefs> | null;  // Correctly using a single user
   hydrated: boolean;
 
   setHydrated(): void;
@@ -60,13 +60,13 @@ export const useAuthStore = create<IAuthStore>()(
         try {
           const session = await account.createEmailPasswordSession(email, password);
           const [user, { jwt }] = await Promise.all([
-            account.get<UserPref>(), // Fetch user data with preferences
+            account.get<UserPrefs>(), // Fetch user data with preferences
             account.createJWT(), // Create JWT token
           ]);
 
           // Ensure the user's reputation is set, if it doesn't exist
-          if (!user.preferences?.reputation) {
-            await account.updatePrefs<UserPref>({
+          if (!user.prefs?.reputation) {
+            await account.updatePrefs<UserPrefs>({
               reputation: 0, // Initialize reputation if it doesn't exist
             });
           }
