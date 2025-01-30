@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { answerCollection, db } from "@/models/name";
 import { databases, users } from "@/models/server/config";
 import { ID } from "node-appwrite";
-import {UserPref} from"@/store/Auth
+import {UserPrefs} from"@/store/Auth"
 export async function POST(request: NextRequest){
     try{
     
@@ -15,7 +15,7 @@ export async function POST(request: NextRequest){
     })
 
     //increase author reputation
-    const prefs = await users.getPrefs<UserPref>(authorId)
+    const prefs = await users.getPrefs<UserPrefs>(authorId)
     await users.updatePrefs(authorId,{
         reputation:Number(prefs.reputation)+1
     })
@@ -42,7 +42,7 @@ export async function DELETE(request:NextRequest){
     const response  =  await databases.deleteDocument(db, answerCollection, answerId)
 
     //decrease the reputation
-    const prefs = await users.getPrefs<UserPref>(answer.authorId)
+    const prefs = await users.getPrefs<UserPrefs>(answer.authorId)
     await users.updatePrefs(answer.authorId,{
         reputation:Number(prefs.reputation)-1
     })

@@ -292,3 +292,5 @@ const QuestionForm = ({question} : {question?:Models.Document}) => {
         </form>
     )
 }
+
+export default QuestionForm;
