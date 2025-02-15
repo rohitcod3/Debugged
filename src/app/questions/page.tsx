@@ -15,7 +15,7 @@ const Page = async ({
     searchParams: { page?: string; tag?: string; search?: string };
 }) => {
     // Destructure searchParams with defaults
-    const { page = "1", tag, search } = searchParams;
+    const { page = "1", tag, search } =  await searchParams;
 
     const queries = [
         Query.orderDesc("$createdAt"),

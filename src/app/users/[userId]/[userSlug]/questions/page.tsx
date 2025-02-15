@@ -14,8 +14,8 @@ const Page = async ({
     searchParams: { page?: string };
 }) => {
     // Destructure params and searchParams
-    const { userId, userSlug } = params;
-    const { page = "1" } = searchParams;
+    const { userId, userSlug } = await params;
+    const { page = "1" } = await searchParams;
 
     const queries = [
         Query.equal("authorId", userId),
