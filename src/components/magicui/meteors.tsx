@@ -22,7 +22,7 @@ export const Meteors = ({ number = 20 }: MeteorsProps) => {
     return (
         <>
             {[...meteorStyles].map((style, idx) => (
-                // Meteor Head
+           
                 <span
                     key={idx}
                     className={clsx(

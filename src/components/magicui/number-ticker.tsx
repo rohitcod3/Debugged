@@ -29,6 +29,7 @@ export default function NumberTicker({
                 motionValue.set(direction === "down" ? 0 : value);
             }, delay * 1000);
     }, [motionValue, isInView, delay, value, direction]);
+    
     useEffect(() => {
         springValue.on("change", latest => {
           if (ref.current) {

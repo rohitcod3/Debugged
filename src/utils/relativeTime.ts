@@ -27,7 +27,7 @@ export default function convertDateToRelativeTime(date: Date) {
         return `${days} day${days !== 1 ? "s" : ""} ago`;
     }
   
-    const months = Math.floor(days / 30.44); // Average days in a month
+    const months = Math.floor(days / 30.44); 
     if (months < 12) {
         return `${months} month${months !== 1 ? "s" : ""} ago`;
     }
