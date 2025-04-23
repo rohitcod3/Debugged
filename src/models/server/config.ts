@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 export const runtime = "nodejs";
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import env from "@/app/env"
 import {Avatars,Client, Databases, Storage, Users} from "node-appwrite"
 

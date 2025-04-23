@@ -44,11 +44,7 @@ const HeroSectionHeader = () => {
     const { session } = useAuthStore();
 
     return (
-<<<<<<< HEAD
-        <div className="container mx-auto px-4">
-=======
         <div className="flex justify-center items-center min-h-screen min-w-screen">
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
             <Particles
                 className="fixed inset-0 h-full w-full"
                 quantity={500}
@@ -56,20 +52,12 @@ const HeroSectionHeader = () => {
                 color="#ffffff"
                 refresh
             />
-<<<<<<< HEAD
-            <div className="relative z-10 grid grid-cols-1 gap-4 md:grid-cols-2">
-                <div className="flex items-center justify-center">
-                    <div className="space-y-4 text-center">
-                        <h1 className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-7xl font-bold leading-none tracking-tighter text-transparent">
-                            RiverFlow
-=======
             <div className="relative z-10 grid grid-cols-1 gap-6  md:grid-cols-2">
                 <div className="flex items-center justify-center">
 
                     <div className="space-y-2  text-center">
                         <h1 className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-7xl font-bold leading-normal lg:leading-[1.2] tracking-tighter text-transparent">
                         Debugged
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
                         </h1>
                         <p className="text-center text-xl font-bold leading-none tracking-tighter">
                             Ask questions, share knowledge, and collaborate with developers

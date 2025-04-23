@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 export const runtime = "nodejs";
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import Answers from "@/components/Answers";
 import Comments from "@/components/Comments";
 import { MarkdownPreview } from "@/components/RTE";
@@ -32,14 +29,9 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 
 const Page = async ({
   params,
-<<<<<<< HEAD
-}: { params: { quesId: string; quesName: string } | Promise<{ quesId: string; quesName: string }> }) => {
-  // Await params before using its properties.
-=======
 }: {
   params: any;
 }) => {
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
   const { quesId, quesName } = await params;
 
   const [question, answers, upvotes, downvotes, comments] = await Promise.all([
@@ -52,21 +44,13 @@ const Page = async ({
       Query.equal("typeId", quesId),
       Query.equal("type", "question"),
       Query.equal("voteStatus", "upvoted"),
-<<<<<<< HEAD
-      Query.limit(1), // for optimization
-=======
       Query.limit(1),
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
     ]),
     databases.listDocuments(db, voteCollection, [
       Query.equal("typeId", quesId),
       Query.equal("type", "question"),
       Query.equal("voteStatus", "downvoted"),
-<<<<<<< HEAD
-      Query.limit(1), // for optimization
-=======
       Query.limit(1),
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
     ]),
     databases.listDocuments(db, commentCollection, [
       Query.equal("type", "question"),
@@ -76,10 +60,7 @@ const Page = async ({
   ]);
 
   const author = await users.get<UserPrefs>(question.authorId);
-<<<<<<< HEAD
-=======
 
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
   [comments.documents, answers.documents] = await Promise.all([
     Promise.all(
       comments.documents.map(async (comment) => {
@@ -196,11 +177,7 @@ const Page = async ({
             <MarkdownPreview className="rounded-xl p-4" source={question.content} />
             <picture>
               <img
-<<<<<<< HEAD
-                src={storage.getFilePreview(questionAttachmentBucket, question.attachmentId).href}
-=======
                 src={storage.getFilePreview(questionAttachmentBucket, question.attachmentId)}
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
                 alt={question.title}
                 className="mt-3 rounded-lg"
               />
@@ -219,11 +196,7 @@ const Page = async ({
             <div className="mt-4 flex items-center justify-end gap-1">
               <picture>
                 <img
-<<<<<<< HEAD
-                  src={avatars.getInitials(author.name, 36, 36).href}
-=======
                   src={avatars.getInitials(author.name, 36, 36)}
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
                   alt={author.name}
                   className="rounded-lg"
                 />

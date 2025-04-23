@@ -29,18 +29,6 @@ export default function NumberTicker({
                 motionValue.set(direction === "down" ? 0 : value);
             }, delay * 1000);
     }, [motionValue, isInView, delay, value, direction]);
-<<<<<<< HEAD
-
-    useEffect(
-        () =>
-            springValue.on("change", latest => {
-                if (ref.current) {
-                    ref.current.textContent = Intl.NumberFormat("en-US").format(latest.toFixed(0));
-                }
-            }),
-        [springValue]
-    );
-=======
     useEffect(() => {
         springValue.on("change", latest => {
           if (ref.current) {
@@ -49,7 +37,6 @@ export default function NumberTicker({
         });
       }, [springValue]);
       
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 
     return (
         <span

@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 export const runtime = "nodejs";
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import { NextRequest, NextResponse } from "next/server";
 import { answerCollection, db } from "@/models/name";
 import { databases, users } from "@/models/server/config";

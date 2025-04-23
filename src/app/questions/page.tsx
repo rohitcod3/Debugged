@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 export const runtime = "nodejs";
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import { databases, users } from "@/models/server/config";
 import { answerCollection, db, voteCollection, questionCollection } from "@/models/name";
 import { Query } from "node-appwrite";
@@ -16,17 +13,10 @@ import Search from "./Search";
 const Page = async ({
     searchParams,
 }: {
-<<<<<<< HEAD
-    searchParams: { page?: string; tag?: string; search?: string };
-}) => {
-    // Destructure searchParams with defaults
-    const { page = "1", tag, search } =  await searchParams;
-=======
     searchParams: any
 }) => {
     // Destructure searchParams with defaults
     const { page = "1", tag, search } =   searchParams;
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 
     const queries = [
         Query.orderDesc("$createdAt"),

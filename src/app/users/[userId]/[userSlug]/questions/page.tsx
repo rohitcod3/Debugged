@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 export const runtime = "nodejs";
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import Pagination from "@/components/Pagination";
 import QuestionCard from "@/components/QuestionCard";
 import { answerCollection, db, questionCollection, voteCollection } from "@/models/name";
@@ -14,13 +11,8 @@ const Page = async ({
     params,
     searchParams,
 }: {
-<<<<<<< HEAD
-    params: { userId: string; userSlug: string };
-    searchParams: { page?: string };
-=======
     params: any
     searchParams: any
->>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 }) => {
     // Destructure params and searchParams
     const { userId, userSlug } = await params;
