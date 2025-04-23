@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import { databases, users } from "@/models/server/config";
+=======
+
+export const runtime = "nodejs";import { databases, users } from "@/models/server/config";
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import { UserPrefs } from "@/store/Auth";
 import React from "react";
 import { MagicCard, MagicContainer } from "@/components/magicui/magic-card";
@@ -9,7 +14,11 @@ import { Query } from "node-appwrite";
 const Page = async ({
   params,
 }: {
+<<<<<<< HEAD
   params: { userId: string; userSlug: string } | Promise<{ userId: string; userSlug: string }>;
+=======
+  params:any
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 }) => {
   // Await params before using its properties
   const { userId, userSlug } = await params;
@@ -19,11 +28,19 @@ const Page = async ({
     users.get<UserPrefs>(userId),
     databases.listDocuments(db, questionCollection, [
       Query.equal("authorId", userId),
+<<<<<<< HEAD
       Query.limit(1), // For optimization; adjust as needed
     ]),
     databases.listDocuments(db, answerCollection, [
       Query.equal("authorId", userId),
       Query.limit(1), // For optimization; adjust as needed
+=======
+      Query.limit(1), 
+    ]),
+    databases.listDocuments(db, answerCollection, [
+      Query.equal("authorId", userId),
+      Query.limit(1), 
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
     ]),
   ]);
 

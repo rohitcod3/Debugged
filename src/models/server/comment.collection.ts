@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+export const runtime = "nodejs";
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import { Permission } from "node-appwrite"
 import { commentCollection,db } from "../name"
 import { databases } from "./config"

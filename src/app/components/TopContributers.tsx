@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 import { cn } from "@/lib/utils";
 
+=======
+
+export const runtime = "nodejs";
+import { cn } from "@/lib/utils";
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import { AnimatedList } from "@/components/magicui/animated-list";
 import { users } from "@/models/server/config";
 import { Models, Query } from "node-appwrite";
@@ -23,7 +29,12 @@ const Notification = ({ user }: { user: Models.User<UserPrefs> }) => {
             <div className="flex flex-row items-center gap-3">
                 <picture>
                     <img
+<<<<<<< HEAD
                         src={avatars.getInitials(user.name, 40, 40).href}
+=======
+                        src={avatars.getInitials(user.name, 40, 40)}
+
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
                         alt={user.name}
                         className="rounded-2xl"
                     />

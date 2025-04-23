@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+export const runtime = "nodejs";
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import Pagination from "@/components/Pagination";
 import { MarkdownPreview } from "@/components/RTE";
 import { answerCollection, db, questionCollection } from "@/models/name";
@@ -11,8 +15,13 @@ const Page = async ({
   params,
   searchParams,
 }: {
+<<<<<<< HEAD
   params: { userId: string; userSlug: string } | Promise<{ userId: string; userSlug: string }>;
   searchParams: { page?: string } | Promise<{ page?: string }>;
+=======
+  params: any
+  searchParams: any
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 }) => {
   // Await dynamic route parameters before using their properties
   const { userId, userSlug } = await params;

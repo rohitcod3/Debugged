@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+export const runtime = "nodejs";
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import { answerCollection, questionCollection, voteCollection } from "@/models/name";
 import { databases, users } from "@/models/server/config";
 import { NextRequest, NextResponse } from "next/server";
@@ -71,7 +75,11 @@ export async function POST(request:NextRequest){
             }
             );
         } else{
+<<<<<<< HEAD
             await users.updatePrefs<UserPref>(QuestionOrAnswer.authorId, {
+=======
+            await users.updatePrefs<UserPrefs>(QuestionOrAnswer.authorId, {
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
                 reputation:
 
                 voteStatus === "upvoted"

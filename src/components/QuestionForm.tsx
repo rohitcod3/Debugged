@@ -138,7 +138,11 @@ const QuestionForm = ({question} : {question?:Models.Document}) => {
             return;
         }
 
+<<<<<<< HEAD
         setingLoading(() => true);
+=======
+        setLoading(() => true);
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
         setError(() => "");
 
         try{
@@ -149,7 +153,11 @@ const QuestionForm = ({question} : {question?:Models.Document}) => {
         setError(() => error.message);
         }
 
+<<<<<<< HEAD
         setingLoading(() => false);
+=======
+        setLoading(() => false);
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
     }
 
     return(

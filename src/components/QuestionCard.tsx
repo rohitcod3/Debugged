@@ -48,7 +48,11 @@ const QuestionCard = ({ ques }: { ques: Models.Document }) => {
                     <div className="ml-auto flex items-center gap-1">
                         <picture>
                             <img
+<<<<<<< HEAD
                                 src={avatars.getInitials(ques.author.name, 24, 24).href}
+=======
+                                src={avatars.getInitials(ques.author.name, 24, 24)}
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
                                 alt={ques.author.name}
                                 className="rounded-lg"
                             />

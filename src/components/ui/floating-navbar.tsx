@@ -1,4 +1,8 @@
 "use client";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import React, { useState } from "react";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -12,7 +16,12 @@ export const FloatingNav = ({
     navItems: {
         name: string;
         link: string;
+<<<<<<< HEAD
         icon?: JSX.Element;
+=======
+        icon?: React.ReactNode;
+
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
     }[];
     className?: string;
 }) => {

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+export const runtime = "nodejs";
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import Pagination from "@/components/Pagination";
 import { answerCollection, db, questionCollection, voteCollection } from "@/models/name";
 import { databases } from "@/models/server/config";
@@ -11,10 +15,15 @@ const Page = async ({
   params,
   searchParams,
 }: {
+<<<<<<< HEAD
   params: { userId: string; userSlug: string } | Promise<{ userId: string; userSlug: string }>;
   searchParams:
     | { page?: string; voteStatus?: "upvoted" | "downvoted" }
     | Promise<{ page?: string; voteStatus?: "upvoted" | "downvoted" }>;
+=======
+  params: any
+  searchParams:any
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 }) => {
 
   const { userId, userSlug } = await params;

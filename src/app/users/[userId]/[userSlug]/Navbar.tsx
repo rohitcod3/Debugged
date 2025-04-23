@@ -34,7 +34,11 @@ const Navbar = () => {
                     <Link
                         href={item.href}
                         className={`block w-full rounded-full px-3 py-0.5 duration-200 ${
+<<<<<<< HEAD
                             pathname === item.href ? "bg-white/20" : `"hover:bg-white/20"
+=======
+                            pathname === item.href ? "bg-white/20" : "hover:bg-white/20"
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
                         }`}
                     >
                         {item.name}

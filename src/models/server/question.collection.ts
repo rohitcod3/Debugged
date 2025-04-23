@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+export const runtime = "nodejs";
+>>>>>>> 1a4cd69 (fixed bugs to enforce eslint)
 import {IndexType, Permission} from "node-appwrite"
 
 import {db, questionCollection} from "../name"
