@@ -1,4 +1,4 @@
-# 🐞 Debugged - StackOverflow Clone
+# 🐞 Debugged 
 
 **Debugged** is a full-stack StackOverflow-style Q&A platform for developers to ask questions, share answers, and upvote helpful solutions — all in real time. Designed to help you debug code, learn from peers, and build community around problem-solving.
 
