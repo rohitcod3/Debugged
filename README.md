@@ -69,7 +69,7 @@ Pull requests are welcome! If you find a bug or want to add features, feel free 
 
 ## 📫 Contact
 
-Made by [Rohit](https://github.com/rohicod3). Feel free to reach out or open issues!
+Made by [Rohit](https://github.com/rohitcod3). Feel free to reach out or open issues!
 
 ---
 
