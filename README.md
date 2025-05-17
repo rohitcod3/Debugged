@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐞 Debugged 
 
-## Getting Started
+**Debugged** is a full-stack StackOverflow-style Q&A platform for developers to ask questions, share answers, and upvote helpful solutions — all in real time. Designed to help you debug code, learn from peers, and build community around problem-solving.
 
-First, run the development server:
+> 💡 Built with a focus on clean UI and a powerful developer experience.
+
+---
+
+## 🚀 Features
+
+- 🧵 Post programming questions with code support
+- 💬 Answer and discuss with others in threaded replies
+- ⬆️ Upvote or downvote answers based on helpfulness
+- 🔍 Search questions using keywords or tags
+- 🧑‍💻 Authentication via Clerk
+- 🧠 Modern, minimal UI built with ShadCN and TailwindCSS
+- 🗂️ Organized by tags, topics, and popularity
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js 14, React, TypeScript, Tailwind CSS, ShadCN UI
+- **State Management:** Zustand (with Immer and Persist)
+- **Authentication:** Clerk
+- **Backend:** Appwrite (Database + Functions)
+- **Deployment:** Vercel
+
+---
+
+
+## 📦 Getting Started
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/your-username/debugged.git
+cd debugged
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Setup .env.local**
+
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_key
+CLERK_SECRET_KEY=your_key
+NEXT_PUBLIC_APPWRITE_ENDPOINT=your_url
+NEXT_PUBLIC_APPWRITE_PROJECT=your_project_id
+```
+
+4. **Run the app**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🙌 Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Pull requests are welcome! If you find a bug or want to add features, feel free to fork the repo and open a PR.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📫 Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Made by [Rohit](https://github.com/rohitcod3). Feel free to reach out or open issues!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌐 Live Demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[https://debugged.vercel.app](https://debugged.vercel.app)  
+_Explore the project live._
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
