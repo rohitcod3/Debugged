@@ -9,10 +9,10 @@ export default function Home() {
  
    <HeroSectionHeader/>
   
-  <div className="bg-black flex justify-evenly border-2  ">
+  {/* <div className="bg-black flex justify-evenly border-2  ">
     <div className="min-w-[50%]"><TopContributers/></div>
     <div className="min-w-[50%]"><LatestQuestions/></div>
-  </div>
+  </div> */}
 
   
   </>
